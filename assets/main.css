@@ -1,0 +1,50 @@
+#bg-image {
+    height: auto;
+    left: 0;
+    margin: 0;
+    min-height: 100%;
+    min-width: 100%;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.nav-menu {
+    top: 0;
+    width: 100%;
+    position: absolute;
+}
+
+.active {
+    background-color: aqua;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #00d7af;
+
+}
+
+li {
+    display: inline;
+    float: left;
+    border-right: 1px solid aliceblue;
+}
+
+li:last-child {
+    border-right: none;
+    float: right;
+    padding-right: 10px;
+}
+
+li a {
+    display: block;
+    color: aliceblue;
+    text-align: center;
+    padding: 12px 16px;
+}
