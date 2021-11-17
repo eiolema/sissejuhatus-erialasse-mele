@@ -1,2 +1,2 @@
-# sissejuhtus-erialasse-mele
-Sissejutaus erialasse rühmatöö
+# sissejuhatus-erialasse-mele
+Sissejuhatus erialasse rühmatöö
