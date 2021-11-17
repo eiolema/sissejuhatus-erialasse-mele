@@ -1,3 +1,6 @@
+body {
+    font-family: Comfortaa, cursive;
+}
 #bg-image {
     height: auto;
     left: 0;
@@ -11,23 +14,23 @@
     z-index: -1;
 }
 
-.nav-menu {
+.navigation-menu {
+    font-family: Comfortaa, cursive;
     top: 0;
     width: 100%;
     position: absolute;
+    left: 0;
+    background-color: #00d7af;
 }
 
 .active {
-    background-color: aqua;
+    background-color: #00ffa6;
 }
 
 ul {
-    list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #00d7af;
-
 }
 
 li {
@@ -39,7 +42,6 @@ li {
 li:last-child {
     border-right: none;
     float: right;
-    padding-right: 10px;
 }
 
 li a {

@@ -1,5 +1,5 @@
 h1 {
-    font-family: "Brush Script MT", cursive;
+    font-weight: lighter;
     text-align: center;
     color: aliceblue;
     margin-top: 10%;
@@ -62,4 +62,10 @@ h1 {
     background-color: #00d7af;
     color: white;
     transform: rotateY(180deg);
+}
+
+.flip-card-image {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
 }
