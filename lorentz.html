@@ -2,23 +2,95 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Lorentzi jõud ja induktsioonivool</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="assets/media/favicon.svg">
     <link rel="stylesheet" href="assets/main.css">
+    <link rel="stylesheet" href="assets/lorentz.css">
 </head>
+<body>
 <img id="bg-image"
      src="assets/media/background.jpg"
      alt="">
-<body>
 <div class="navigation-menu">
     <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="ampere.html">Ampere'i seadus</a></li>
-        <li><a class="active" href="lorentz.html">Lorentzi jõud</a></li>
-        <li><a href="faraday.html">Faraday induktsiooniseadus</a></li>
-        <li><a href="lenz.html">Lenzi reegel</a></li>
+        <li><a href="ampere.html">Ampere'i seadus <br> ja magnetinduktsioon</a></li>
+        <li><a class="active" href="lorentz.html">Lorentzi jõud ja <br> induktsioonivool</a></li>
+        <li><a href="faraday.html">Magnetvoog, induktsiooni elektromotoorjõud ja <br> Faraday induktsiooniseadus</a>
+        </li>
+        <li><a href="lenz.html">Lenzi reegel ja <br> rakendused</a></li>
         <li><a href="meist.html">Meist</a></li>
     </ul>
+</div>
+<div class="content">
+    <h1>Lorentzi jõud ja induktsioonivool</h1>
+    <h2>Lorentzi jõud</h2>
+    <p><span class="highlight">Magnetväljas liikuvale laetud osakesele mõjuvat jõudu nimetatakse Lorentzi jõuks.</span><br>
+        Teame, et juhtmelõigule, mille pikkus on <span class="math">l</span> ja milles kulgeb vool tugevusega <span
+                class="math">I</span>,
+        mõjub magnetväljas induktsiooniga <span class="math">B</span> magnetjõud <span class="math">Fm</span>.<span
+                class="math"> Fm = BIl sin &alpha;</span> (Amp&egrave;re’i seadus).
+        Tegelikult summeerub jõud Amp&egrave;re'i seaduses üksikutele liikuvatele laengukandjatele mõjuvatest Lorentzi
+        jõududest. Laengut <span class="math">q</span>
+        omavale ja kiirusega <span class="math">v</span> liikuvale osakesele mõjub magnetväljas induktsiooniga <span
+                class="math">B</span> Lorentzi jõud <span class="math">Fl = qvB sin &alpha;</span>,
+        kus <span class="math">&alpha;</span> on nurk osakese liikumissuuna (kiirusvektori) ja magnetvälja suuna
+        (B-vektori) vahel.
+    </p>
+    <p>
+        <img class="media-align-right" src="assets/media/vasaku-kae-reegel.jpg" alt="">
+        Positiivse laenguga osakestele mõjuva <span class="highlight">Lorentzi jõu suuna</span> võib seega samuti
+        määrata vasaku käe reegli abil, mis antud juhul kõlab järgmiselt:
+        <br>
+        <br>
+        <span class="highlight">Kui vasaku käe väljasirutatud sõrmed näitavad positiivselt laetud osakese liikumise suunda ja magnetvälja jõujooned tulevad peopessa,
+            siis väljasirutatud pöial näitab osakesele mõjuva Lorentzi jõu suunda
+        </span>
+        <br>
+    </p>
+    <p>
+        <i>
+            Elektroni kui negatiivselt laetud osakese korral on Lorentzi jõu suund eelnevale vastupidine, seega jõu
+            suunda näitab analoogiliselt paikneva parema käe pöial. Lorentzi jõud on suunatud alati risti nii liikumise
+            suunaga kui ka magnetvälja suunaga.
+        </i>
+    </p>
+    <p>
+        <iframe class="media-align-left"
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/nRDVm5rn_2A"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+    </p>
+    <br class="add-space-350px">
+    <h2>Induktsioonivool</h2>
+    <p>
+        <img class="media-align-right" src="assets/media/generaator.png" alt="">
+        Nüüd uurime mähisekeeru lõiku ab, mis liigub ülespoole masina võlli päripäeva pöörava välisjõu toimel.
+        Positiivsed laengukandjad hakkavad vaadeldavas juhtmekeerus Lorentzi jõu mõjul liikuma suunas <b>a&rightarrow;b&rightarrow;c&rightarrow;d</b>. Juhtme
+        liikumine magnetväljas tekitab juhtmes <b>induktsioonivoolu</b>. Nähtust võib kokkuvõtlikult kirjeldada kujul:<br>
+        magnetväli + liikumine &rightarrow; elektrivool.
+        Nähtust, kus magnetvälja muutumine tekitab elektrivoolu, nimetatakse
+        <b>elektromagnetilise induktsiooni nähtuseks</b>. Kirjeldatud masinat nimetatakse <b>generaatoriks</b>.
+        <br class="add-space-90px">
+        <iframe class="media-align-left" width="560"
+                height="315"
+                src="https://www.youtube.com/embed/hajIIGHPeuU"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        <iframe class="media-align-left" width="560"
+                height="315"
+                src="https://www.youtube.com/embed/gZpa7FYR_pw"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+    </p>
 </div>
 </body>
 </html>

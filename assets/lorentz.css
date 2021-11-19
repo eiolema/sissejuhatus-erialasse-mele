@@ -1,0 +1,23 @@
+.media-align-left {
+    margin: 20px 10px 50px;
+    float: left;
+}
+
+.media-align-right {
+    margin-right: 10px;
+    margin-bottom: 50px;
+    margin-left: 10px;
+    float: right;
+}
+
+iframe.media-align-right {
+    margin-top: 20px;
+}
+
+img.media-align-left {
+    height: 200px;
+}
+
+img.media-align-right {
+    height: 300px;
+}
