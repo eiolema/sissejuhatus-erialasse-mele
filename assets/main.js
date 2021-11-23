@@ -8,7 +8,12 @@ function openModal(event) {
     event.preventDefault(); //takistab lingi vajutamisel lehe üles kerimist
     let url = event.target.getAttribute("data-yt-url"); // parameetri väärtuseks antakse custom attribuudi "data-yt-url" väärtus
     document.getElementById("yt-modal").style.display = "block"; // modaali div tehakse nähtavaks
-    document.getElementById("yt-iframe").setAttribute("src", url); //youtube videot sisaldavale iframele antakse ette video url
+
+    let ytIframe = document.getElementById("yt-iframe");
+    ytIframe.setAttribute("src", url);//youtube videot sisaldavale iframele antakse ette video url
+    ytIframe.setAttribute("height", "500");// iframe kõrgus
+    ytIframe.setAttribute("width", "100%");//iframe laius
+
 }
 
 // modaali sulgemise funktsioon
