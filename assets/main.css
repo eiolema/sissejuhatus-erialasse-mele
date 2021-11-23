@@ -37,14 +37,6 @@ body {
     font-size: 30px;
 }
 
-.add-space-90px {
-    margin-bottom: 90px;
-}
-
-.add-space-350px {
-    margin-bottom: 350px;
-}
-
 .navigation-menu {
     font-family: Comfortaa, cursive;
     font-weight: bold;
@@ -73,8 +65,7 @@ li {
 }
 
 li:last-child {
-    border-left: none;
-    float: right;
+    border-right: none;
 }
 
 li:hover {
@@ -97,9 +88,22 @@ p {
 }
 
 .math {
-    font-family: "Times New Roman", serif;
-    font-weight: bold;
-    font-style: italic;
-    font-size: 25px;
+    font-size: 21px; !important;
+}
+
+.media-align-left {
+    margin-right: 20px;
+    float: left;
+}
+
+.media-align-right {
+    margin-right: 10px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    float: right;
+}
+
+iframe.media-align-right {
+    margin-top: 20px;
 }
 
