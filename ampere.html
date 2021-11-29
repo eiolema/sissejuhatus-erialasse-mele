@@ -2,9 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Ampère'i seadus ja magnetinduktsioon</title>
     <link rel="icon" type="image/x-icon" href="assets/media/favicon.svg">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="stylesheet" href="assets/main.css">
+    <link rel="stylesheet" href="assets/ampere.css">
+    <link rel="stylesheet" href="assets/modal.css">
 </head>
 <img id="bg-image"
      src="assets/media/background.jpg"
@@ -13,14 +17,70 @@
 <div class="navigation-menu">
     <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a class="active" href="ampere.html">Ampere'i seadus</a></li>
+        <li><a class="active" href="ampere.html">Ampère'i seadus</a></li>
         <li><a href="lorentz.html">Lorentzi jõud</a></li>
         <li><a href="faraday.html">Faraday induktsiooniseadus</a></li>
         <li><a href="lenz.html">Lenzi reegel</a></li>
     </ul>
 </div>
+<div class="content">
+    <h1>Ampère'i seadus ja magnetinduktsioon</h1>
+    <h2>Magnetväli</h2>
+    <p>
+        Juba Vana-Kreekas tunti kivimit (kr - <i>Magnetis lithos</i>), mis oli suuteline raudesemeid enda külge tõmbama. 
+        Tavaliselt algab ka tänapäeva inimese tutvus magnetväljaga just <b>püsimagnetitega</b>, mis on oma olemuselt magnetvälja omavad kehad. 
+        Hea näitena võime tuua külmkapimagnetid, mille juures märkame, et lähendades üht teisele võib toimuda nii tõukumine kui ka tõmbumine olenevalt sellest, 
+        mis asendisse me teise magneti pöörame. See on tingitud <b>põhja- ja lõunapoolustest</b> - erinimelised tõmbuvad ja samanimelised tõukuvad.
+    </p>
+    <p>
+        <img class="media-align-right" id="magnetvali" src="assets/media/magnetvali.jpg" alt="">
+        Nüüdseks teame juba hästi, et lisaks püsimagnetitele on magnetväli ka elektrivoolu ümber. 1820. a. avaldas Taani füüsik H. C. Oersted oma katsete tulemused, 
+        et juhet läbiv elektrivool avaldab magnetnõelale orienteerivat mõju. Samal aastal näitas A. M. Ampère, et kaks vooluga juhet mõjutavad teineteist samuti magnetjõuga. 
+        Tema tuligi esimesena mõttele, et magnetvälja tekitab laengukandjate liikumine. Tänaseks on selge, et ka püsimagneti omadused on määratud eelkõige elektronide olemuslike magnetväljadega, 
+        mis on tingitud just osakese sisemisest liikumisest ehk <b>spinnist</b>.
+        <br>
+        Kokkuvõttes: 
+        <br>
+        <b>magnetväljaks nimetatakse laetud osakeste liikumisel tekkivat jõuvälja</b>. 
+    </p>
+    <h2>Ampère seadus ja magnetinduktsioon</h2>
+    <p>
+        Ampère’i avastas oma katsete käigus, et vooluga juhtmete vahel mõjuv magnetjõud on sõltuv juhtmete omavahelisest asendist (paralleelsete juhtmete korral maksimaalne, ristuvate korral null), 
+        kaugusest, juhtmete pikkusest ning voolutugevusest juhtmetes. Veel märkas ta, et samasuunaliste vooludega juhtmed tõmbuvad, vastassuunaliste vooludega juhtmed aga tõukuvad.
+        <br>
+        Esitame nüüd Ampère’i seaduse esimese kuju:
+        <br>
+        <b>Paralleelsete juhtmete vahel mõjuv magnetjõud <span class="math">\(F_m\)</span> on võrdeline voolutugevustega <span class="math">\(I_1\)</span> ja <span class="math">\(I_2\)</span> kummaski juhtmes 
+            ning vaadeldava juhtmeosa pikkusega <span class="math">\(l\)</span> ning pöördvõrdeline juhtmete vahekaugusega <span class="math">\(r\)</span>.
+        </b>
+        <br>
+        <br>
+        <span class="math">\(F_m=K \frac{I_1 I_2 l}{r}\)</span>, vaakumis on konstant <span class="math">\(K=2\cdot 10^{-7} \frac{N}{A^2}\)</span>
+    </p>
+    <p>
+        Sooviksime aga magnetjõudu leida ka siis, kui tegemist on suvalise magnetvälja ja sellesse asetatud suvalises asendis oleva vooluga juhtmega. Appi tuleb Ampère’i seaduse üldistatud kuju:
+        <br>
+        <b>Vooluga juhtmele mõjuv jõud <span class="math">\(F_m\)</span> on võrdeline juhet läbiva voolu tugevusega <span class="math">\(I\)</span>, juhtme pikkusega <span class="math">\(l\)</span> 
+            ning siinusega nurgast <span class="math">\(\alpha\)</span> voolu suuna ja magnetvälja suuna vahel:
+            <br>
+            <br>
+            <span class="math">\(F_m = B I l \sin \alpha\)</span>
+            <br>
+            <br>
+        </b>    
+            Võrdetegurit <span class="math">\(B\)</span> nimetatakse <b>magnetinduktsiooniks</b> ja see näitab jõudu, mis mõjub ühikulise vooluga ja ühikulise pikkusega juhtmele selle juhtmega ristuvas magnetväljas. 
+            Seega on ta magnetvälja iseloomustav vektoriaalne suurus ja seda võib nimetada ka B-vektoriks. B-vektori suunda näitab magnetväljas orienteerunud magnetnõela põhjapoolus. Magnetinduktsiooni mõõtühik on üks tesla (1 T).
+        </p>
+        <p>
+            <img class="media-align-right" id="vasak-kasi" src="assets/media/vasaku_kae_reegel_2.png" alt="">
+            Jõu suuna määramiseks Ampère’i seaduses võib kasutada <b>vasaku käe reeglit</b>. See väidab, et kui vasaku käe väljasirutatud sõrmed osutavad voolu suunda ja magnetväli on suunatud peopessa, siis väljasirutatud pöial näitab 
+            juhtmelõigule mõjuva jõu suunda. 
+            <br>
+            Vooluga juhtmele mõjuv magnetjõud on suunatud alati risti nii voolu kui ka magnetvälja suunaga.
+        </p>
+</div>
 </body>
 <footer>
-    <p></p>Tekst veebilehel on refereering õpikust <a href="https://opik.fyysika.ee/index.php/book/view/15">"Elektromagnetism"</a>, Henn Voolaid, Kalev Tarkpea</p>
+    <p>Tekst veebilehel on refereering õpikust <a href="https://opik.fyysika.ee/index.php/book/view/15">"Elektromagnetism"</a>, Henn Voolaid, Kalev Tarkpea</p>
 </footer>
 </html>
