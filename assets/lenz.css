@@ -3,4 +3,7 @@
 }
 ol.c {
     list-style-type: upper-roman;
+    font-size: 25px;
+    text-align: justify;
+    margin: 10px 30px 10px 30px;
 }
