@@ -2,14 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Lenzi reegel ja rakendused</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="assets/media/favicon.svg">
     <link rel="stylesheet" href="assets/main.css">
+    <link rel="stylesheet" href="assets/lenz.css">
+    <link rel="stylesheet" href="assets/modal.css">
 </head>
+<body>
 <img id="bg-image"
      src="assets/media/background.jpg"
      alt="">
-<body>
 <div class="navigation-menu">
     <ul>
         <li><a href="index.html">Home</a></li>
@@ -19,5 +24,84 @@
         <li><a class="active" href="lenz.html">Lenzi reegel</a></li>
     </ul>
 </div>
+<div class="content">
+    <h1>Lenzi reegel ja induktsiooniseaduse rakendused</h1>
+    <h2>Lenzi reegel</h2>
+    <p>Kujutame ette olukorda, kus kasvava magnetvälja tõttu tekkinud induktsioonivool on sellise suunaga,
+         et ta tekitab samasuunalise magnetvälja ja seega võimendab teda tekitanud magnetvälja,
+          mis omakorda kasvataks induktsioonivoolu, mis omakorda võimendaks magnetvälja jne. 
+          Oleksime saanud igavese vooluallika ja kõik meie energiamured oleks lahendatud. Kahjuks see aga energia jäävuse seaduse järgi kehtida ei saa. 
+    </p>
+    <p>Tegelikult on induktsioonivool aga alati selline, et soodustab esialgse olukorra säilitamist, taastamist. 
+        Magnetvälja kasvu korral on induktsioonivoolu magnetväli vastupidine takistades magnetvälja kasvu. Magnetvälja kahanemise korral tekib aga samasuunalise magnetväljaga induktsioonivool takistades kahanemist. 
+        Seda asjaolu märkas esimesena Emil Lenz (1804-1865), kes formuleeris teadmise ka reeglina.
+    </p> 
+    <p>Toome siin kaks erinevat <span class="highlight">Lenzi reegli</span> sõnastust:
+        <ol class="c">
+            <li>Induktsioonivoolu suund on selline, et tema magnetväli kompenseeriks muutust, mis voolu põhjustab;
+            </li>
+            <li>Kui välismõju tingib magnetvoo kasvu kontuuris, siis on induktsioonivoolu magnetväli välise magnetvälja suhtes vastassuunaline (takistab kasvu). 
+                Kui aga välismõju põhjustab magnetvoo kahanemist, siis on induktsioonivoolu magnetväli välise magnetväljaga samasuunaline (takistab kahanemist).
+            </li>
+        </ol>
+    </p>
+    <p>
+        <img class="media-align-right" id="poorisvoolud" src="assets/media/poorisvoolud.jpg" alt="">
+        Induktsioonivoolud tekivad tegelikult suvalise kujuga metallkehas, millele mõjuv magnetväli piisavalt kiiresti muutub. Selliseid voolusid nimetatakse <span class="highlight">pöörisvooludeks</span>. 
+    </p>
+    <h2>Hõljumine</h2>
+    <p>
+        Kui me asetame mittemagneetuva elektrijuhi (so elektrijuhi, mis ei tõmbu magneti külge) magneti kohale ja hakkame seda magnetitele lähemale nihutama, siis Lenzi reegli järgi tekivad voolud, 
+        mis üritavad magnetvälja muutumise mõju kompenseerida. Juhi ümber tekib püsimagnetile iseloomulik magnetväli, mis üritab juhti tagasi ülespoole lükata. Senikaua kuni magnetväli muutub, 
+        tekib ka tõukejõud ja võiksime märgata hõljumist. Sellised voolud aga lakkavad kiiresti tänu takistusele. Sarnast olukorda saab tekitada aga näiteks väga kiiresti pöörlevate silindritega nagu on näha järgnevates videodes:
+        <br>
+        <a class="yt-button" href="" data-yt-url="https://www.youtube.com/embed/K4v11pLMzzA">Hõljuvad magnetid pöörlevate vasksilindrite kohal</a>
+        <br>
+        <a class="yt-button" href="" data-yt-url="https://www.youtube.com/embed/X54gibrRgIA">Hõljuv magnet alumiiniumsilindri kohal</a>
+    </p>
+    <p>
+        Kui soovime hõljumist saavutada efektiivsemalt, oleks meil vaja kasutada ülijuhte, sest nendes tekkinud pöörisvoolud ei lakka. Kahjuks küll peavad ülijuhid enamasti oma omaduste saavutamiseks olema väga madalatel temperatuuridel, 
+        mis seab meile omakorda piirangud kasutamiseks.
+        <br>
+        <a class="yt-button" href="" data-yt-url="https://www.youtube.com/embed/YI_3T0jZ0RQ">Hõljuv ülijuht magnetrelsi kohal</a>
+        <br>
+        <a class="yt-button" href="" data-yt-url="https://www.youtube.com/embed/XjwF-STGtfE">Hõljuv ülikiire rong MagLev</a>  
+    </p>
+    <h2>Elektrilised pidurid</h2>
+    <p>
+        Kui mingi metallkeha magnetväljas liigub või liigub magnet metallkeha läheduses, siis pöörisvoolude olemasolu pidurdab seda liikumist (Lenzi reegel). Niimoodi ongi võimalik väga kiiresti pidurdada näiteks lõbustuspargi atraktsiooni. Kasutatakse ka liftides, kraanades, rongides jne. 
+    <br>
+    <a class="yt-button" href="" data-yt-url="https://www.youtube.com/embed/hR5kT3rRCXc">Magneti kukkumist pidurdatakse vasktorus</a>
+        <br>
+    <a class="yt-button" href="" data-yt-url="https://www.youtube.com/embed/0b0V0impJ_E">Alumiiniumplaadi kiire pidurdumine magnetväljas</a>  
+    </p>
+    <h2>Induktsiooniga kuumutamine</h2>
+    <p>
+        Elektrivooluga kaasneb tänu takistusele soojushulga eraldumine, mida kasutatakse ära induktsioonpliitides, kus kuumus tekib otse potipõhjas tänu elektromagnetilisele induktsioonile ja pöörisvooludele. Soojusülekanne pliidilt potile jääb ära ning saame energiasäästlikuma lahenduse. Samuti pole pliidiplaat ise nii kuum. 
+        <br>
+        <a class="yt-button" href="" data-yt-url="https://www.youtube.com/embed/qUiCh1OTLts">Alumiinium hõljub ja sulab kiiresti muutuvas magnetväljas</a>
+        <br>
+        Lõpetuseks üks video, mis demonstreerib kõiki mainitud nähtusi üheaegselt:
+        <br>
+        <a class="yt-button" href="" data-yt-url="https://www.youtube.com/embed/qUiCh1OTLts">Hõljuv grill</a>  
+    </p>
+</div>
+<div id="yt-modal">
+    <div id="yt-modal-content">
+        <span id="close-btn">&times;</span>
+        <div id="iframe-container">
+        <iframe id="yt-iframe" width="100%"
+                height="420"
+                src=""
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
 </body>
+<script src="assets/main.js"></script>
+<footer>
+    Tekst veebilehel on refereering õpikust <a href="https://opik.fyysika.ee/index.php/book/view/15">"Elektromagnetism"</a>, Henn Voolaid, Kalev Tarkpea
+</footer>
 </html>
