@@ -52,28 +52,28 @@ body {
     background-color: #16d091;
 }
 
-ul {
+.navigation-menu ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
 
-li {
+.navigation-menu li {
     display: inline;
     float: left;
     border-left: 1px solid aliceblue;
     height: 56px;
 }
 
-li:last-child {
+.navigation-menu li:last-child {
     border-right: none;
 }
 
-li:hover {
+.navigation-menu li:hover {
     background-color: #00ffa6;
 }
 
-li a {
+.navigation-menu li a {
     display: block;
     color: aliceblue;
     text-align: center;
@@ -81,7 +81,7 @@ li a {
     padding: 10px;
 }
 
-p {
+.content p {
     text-align: justify;
     margin: 10px 30px 10px 30px;
     padding-bottom: 20px;
@@ -107,6 +107,7 @@ p {
 iframe.media-align-right {
     margin-top: 20px;
 }
+
 footer{
     font-family: Comfortaa, cursive;
     font-weight: bold;
@@ -115,5 +116,9 @@ footer{
     left: 0;
     background-color: #00d7af;
     color: aliceblue;
-    font-size: 5px;
+}
+
+footer p {
+    margin-left: 10px;
+    font-size: 15px;
 }
