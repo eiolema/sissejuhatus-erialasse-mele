@@ -53,14 +53,8 @@ h1 {
     backface-visibility: hidden;
 }
 
-.flip-card-front {
-    background-color: #bbb;
-    color: black;
-}
-
 .flip-card-back {
     background-color: #00d7af;
-    color: white;
     transform: rotateY(180deg);
 }
 
@@ -75,4 +69,27 @@ h1 {
     margin-top: 30px;
     margin-bottom: 30px;
     font-size: 25px;
+}
+
+@media (max-width: 1600px) {
+    .flip-card {
+        width: 200px;
+        min-width: 100px;
+        height: 200px;
+        min-height: 100px;
+    }
+
+    .flip-card-image {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .flip-card-content {
+        height: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+
 }
